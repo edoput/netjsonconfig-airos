@@ -1,6 +1,6 @@
 import unittest
 
-from netjsonconfig.backends.airos.intermediate import intermediate_to_list
+from netjsonconfig_airos.intermediate import intermediate_to_list
 
 
 class TestIntermediateConversion(unittest.TestCase):
