@@ -1,18 +1,18 @@
 from unittest import TestCase
 
-from netjsonconfig import AirOs
-from netjsonconfig.backends.airos.airos import to_ordered_list
-from netjsonconfig.backends.airos.converters import (Aaa, Bridge, Dhcpc,
-                                                     Discovery, Dyndns,
-                                                     Ebtables, Gui, Httpd,
-                                                     Igmpproxy, Iptables,
-                                                     Netconf, Netmode,
-                                                     Ntpclient, Pwdog, Radio,
-                                                     Resolv, Route, Snmp, Sshd,
-                                                     Syslog, System, Telnetd,
-                                                     Tshaper, Unms, Update,
-                                                     Upnpd, Users, Vlan,
-                                                     Wireless, Wpasupplicant)
+from netjsonconfig_airos import AirOs
+from netjsonconfig_airos.airos import to_ordered_list
+from netjsonconfig_airos.converters import (Aaa, Bridge, Dhcpc,
+                                            Discovery, Dyndns,
+                                            Ebtables, Gui, Httpd,
+                                            Igmpproxy, Iptables,
+                                            Netconf, Netmode,
+                                            Ntpclient, Pwdog, Radio,
+                                            Resolv, Route, Snmp, Sshd,
+                                            Syslog, System, Telnetd,
+                                            Tshaper, Unms, Update,
+                                            Upnpd, Users, Vlan,
+                                            Wireless, Wpasupplicant)
 
 
 class ConverterTest(TestCase):
