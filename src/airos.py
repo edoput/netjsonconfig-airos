@@ -2,7 +2,7 @@ from collections import OrderedDict
 from io import BytesIO
 import six
 
-from ..base.backend import BaseBackend
+from netjsonconfig.backends.base.backend import BaseBackend
 from .converters import (Aaa, Bridge, Dhcpc, Discovery, Dyndns, Ebtables, Gui,
                          Httpd, Igmpproxy, Iptables, Netconf, Netmode,
                          Ntpclient, Pwdog, Radio, Resolv, Route, Snmp, Sshd,

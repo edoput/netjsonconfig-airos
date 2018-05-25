@@ -1,8 +1,8 @@
 """
 AirOS specific JSON-Schema definition
 """
-from ...schema import schema as default_schema
-from ...utils import merge_config
+from netjsonconfig.schema import schema as default_schema
+from netjsonconfig.utils import merge_config
 
 
 """

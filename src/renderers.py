@@ -1,4 +1,4 @@
-from ..base.renderer import BaseRenderer
+from netjsonconfig.backends.base.renderer import BaseRenderer
 
 
 class AirOsRenderer(BaseRenderer):

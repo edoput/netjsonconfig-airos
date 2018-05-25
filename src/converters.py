@@ -1,10 +1,10 @@
 from copy import deepcopy
 from ipaddress import ip_interface
+from netjsonconfig.backends.base.converter import BaseConverter
 
 import six
 
-from ...utils import get_copy
-from ..base.converter import BaseConverter
+from netjsonconfig.utils import get_copy
 from .aaa import bridge_devname, profile_from_interface, status_from_interface
 from .ebtables import encrypted, unencrypted
 from .interface import (autonegotiation, bridge, flowcontrol, mode, protocol,
