@@ -9,7 +9,7 @@ setup(
         packages=find_packages(),
         entry_points={
             'netjsonconfig.backends': [
-                'airos=src.airos:AirOs',
+                'airos=netjsonconfig_airos.__init__:AirOs',
             ]
         }
     )
