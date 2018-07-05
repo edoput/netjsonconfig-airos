@@ -15,6 +15,9 @@ setup(
                 'airos=netjsonconfig_airos.__init__:AirOs',
             ]
         },
+        package_data={
+            '': ['schema/airos.json'],
+        },
         keywords=[
             'airos',
             'netjsonconfig',
