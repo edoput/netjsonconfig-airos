@@ -18,7 +18,7 @@ The ``AirOs`` backend allows to generate AirOS v8.3 compatible configurations.
 Converters with defaults
 ------------------------
 
-NetSJON does not map explicitly to various section of the AirOS device configuration.
+`NetJSON <http://netjson.org>`_ does not map explicitly to various section of the AirOS device configuration.
 For those section we have provided default values that should work both in ``bridge``
 and ``router`` mode.
 
