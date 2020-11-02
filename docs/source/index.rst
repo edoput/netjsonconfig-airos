@@ -15,7 +15,41 @@ Welcome to netjsonconfig-airos's documentation!
     This module will eat your socks! If you like your socks eaten in a different
     manner add an issue.
 
-The ``AirOs`` backend allows to generate AirOS v8.3 compatible configurations.
+The ``AirOs`` backend allows to generate AirOS v8.3 compatible configurations. This work is a plugin
+to the *netjsonconfig* tool that you can install to generate configuration files for AirOS v8.3 .
+
+Using *netjsonconfig* you can generate configuration files for many devices from different vendors starting
+from the same configuration syntax, NetJSON.
+
+To get started using `NetJSON <http://netjson.org>`_  and `netjsonconfig <http://netjsonconfig.openwisp.org/en/latest/>`_
+please read their documentation but it should boil down to do
+
+.. code-block:: bash
+
+   pip install netjsonconfig
+
+Once you have installed *netjsonconfig* you will be able to install this package, as it is not published on pypi
+you will need to install it from a tarball or directly from the git repository. There is virtually no practical difference between the two options.
+
+.. code-block:: bash
+
+   # this will install it using a tarball
+   pip install https://github.com/edoput/netjsonconfig-airos/tarball/master
+   # this will install it using git
+   pip install -e git+git://github.com/edoput/netjsonconfig-airos#egg=netjsonconfig-airos
+
+If everything went correctly you will see that the *airos* backend is now available as an option
+in the help text for *netjsonconfig*.
+
+.. code-block:: bash
+
+   netjsonconfig
+   usage: netjsonconfig [-h] [--config CONFIG] [--templates [TEMPLATES [TEMPLATES ...]]] [--native NATIVE]
+                     --backend {openwrt,openwisp,openvpn,airos} # <--- ready to help your with airos!
+                     --method {render,generate,write,validate,json}
+                     [--args [ARGS [ARGS ...]]] [--verbose] [--version]
+   netjsonconfig: error: the following arguments are required: --method/-m --backend/-b
+
 
 Converters with defaults
 ------------------------
